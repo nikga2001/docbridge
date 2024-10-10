@@ -1,256 +1,182 @@
 import React from "react";
-
+import Team from "./Team";
+import Documents from "./Documents";
+import Information from "./Information";
+import Exam from "./Exam";
+import About from "./About";
 export default function Services({
   showMore,
   setShowMore,
 }) {
   const handleButton = () => {
-    setShowMore((prevShowMore) => !prevShowMore);
+    setShowMore(!showMore);
   };
   return (
-    <section className="mt-[40px] bg-black">
+    <section className="mt-[40px] bg-[#F0F4F8]">
       <div className="mr-[15px] ml-[15px]">
-        <p className="text-[#FFF] font-poppins text-[40px] font-black pt-[50px]">
+        <p className="text-[#002F6C] font-poppins text-[40px] sm:text-[45px] lg:text-[50px] font-black pt-[50px] text-center tracking-wide">
           Services
         </p>
-        <div>
+
+        <Team
+          showMore={showMore}
+          setShowMore={setShowMore}
+        />
+        <Documents
+          showMore={showMore}
+          setShowMore={setShowMore}
+        />
+        <Information
+          showMore={showMore}
+          setShowMore={setShowMore}
+        />
+        <Exam
+          showMore={showMore}
+          setShowMore={setShowMore}
+        />
+
+        <div className="mt-[80px]">
           <img
             src="/images/document.jpg"
             alt="Document preparation"
-            className="w-full h-full object-scale-down pt-[30px]"
+            className="max-w-full rounded-[30px] shadow-custom-heavy"
           />
-          <p className="text-[#FFF] mt-[40px] font-poppins font-bold text-[20px]">
-            Document Preparation Help
+
+          <p className="text-[#002F6C] mt-[40px] font-poppins font-bold text-[20px] text-center">
+            How Does the Medical Exam Work?
           </p>
-          <p className="text-[#FFF] mt-[20px] font-poppins text-[15px] font-medium mb-[20px]">
-            We assist bachelors in preparing and
-            organizing essential documents for
-            staying and working in Germany.
+
+          <p className="text-[#333333] mt-[20px] font-poppins text-[15px] font-medium text-center">
+            Understand the structure and key
+            components of the medical licensing
+            exam.
           </p>
 
           <button
             onClick={handleButton}
-            className=" px-4 py-2 bg-blue-500 text-white font-bold rounded"
+            className="px-4 py-2 bg-[#4836b8] text-white font-bold rounded-[20px] shadow-md hover:bg-[#372799] transition-all mt-[20px]"
           >
             {showMore ? "Show Less" : "Show More"}
           </button>
 
           {showMore && (
-            <div className="text-[#FFF] mt-[20px] font-poppins text-[15px] font-medium">
+            <div className="text-[#333333] mt-[20px] font-poppins text-[15px] font-medium">
               <ul className="list-disc pl-[20px]">
-                <li>
-                  Job placement in various fields
-                  as an assistant doctor (Zusage
-                  der Stelle) + hospitation (for
-                  licensed doctors and bachelor's
-                  degree graduates).
+                <li className="leading-relaxed">
+                  Doctor-patient conversation: You
+                  will conduct a 15-minute
+                  anamnesis with an actor playing
+                  the patient. You’ll receive
+                  details about the case 10
+                  minutes before the exam. During
+                  the conversation, note down
+                  relevant health information on a
+                  pre-printed sheet (though it
+                  won’t be evaluated). Afterward,
+                  explain diagnostic and/or
+                  therapeutic measures in simple
+                  terms that the patient can
+                  understand. You have a maximum
+                  of 5 minutes to explain and
+                  answer questions.
                 </li>
-                <li className="mt-2">
-                  Assistance with all bureaucratic
-                  matters (document collection,
-                  translation, and submission).
+
+                <li className="mt-[30px] leading-relaxed">
+                  Epicrisis: Write a discharge
+                  summary based on the provided
+                  documents. Include the patient's
+                  current complaints,
+                  investigations conducted, and
+                  findings. Focus on grammar,
+                  spelling, and clarity, using
+                  full sentences and appropriate
+                  linking methods. You won’t have
+                  access to a spell checker, but a
+                  medical dictionary is provided.
+                  You have 20 minutes for this
+                  section.
                 </li>
-                <li className="mt-2">
-                  Registration for the FSP exam.
-                </li>
-                <li className="mt-2">
-                  Support in obtaining a
-                  professional license
-                  (Berufserlaubnis).
-                </li>
-                <li className="mt-2">
-                  Intensive preparation courses
-                  for the FSP exam based on the
-                  specific requirements of the
-                  respective federal state.
-                </li>
-                <li className="mt-2">
-                  The possibility to receive an
-                  appointment for the approbation
-                  exam within 1-2 years of
-                  starting work, without
-                  completing residency in Georgia.
-                </li>
-                <li className="mt-2">
-                  Individual document review for
-                  those who have completed
-                  residency or internships in
-                  post-Soviet countries.
-                </li>
-                <li className="mt-2">
-                  Support in obtaining a
-                  hospitation visa, including
-                  sponsorship.
-                </li>
-                <li className="mt-2">
-                  Necessary documents, common to
-                  all federal states (notarized
-                  copies required for each
-                  document). Individual cases are
-                  reviewed based on specific
-                  circumstances.
+                <li className="mt-[30px] leading-relaxed">
+                  Doctor-doctor conversation: In
+                  the final part of the exam,
+                  you'll present the patient's
+                  case to the examiners using
+                  medical terminology. You’ll need
+                  to summarize key findings,
+                  including the medical report,
+                  colleague’s input (film), and
+                  any relevant lab results. After
+                  the presentation, the two
+                  examiners will ask questions
+                  about the case, so be prepared
+                  to answer clearly and concisely.
+                  This part assesses your ability
+                  to communicate effectively with
+                  fellow medical professionals.
                 </li>
               </ul>
             </div>
           )}
         </div>
 
-        <div>
-          <img
-            src="/images/operation.jpg"
-            alt="Operation assistance"
-            className="w-full h-full object-scale-down mt-[20px]"
-          />
-          <p className="text-[#FFF] mt-[40px] font-poppins font-bold text-[20px]">
-            Operation Assistance
-          </p>
-          <p className="text-[#FFF] mt-[20px] font-poppins text-[15px] font-medium ">
-            We provide guidance and support
-            throughout the job placement and
-            licensing process.
-          </p>
-          <button
-            onClick={handleButton}
-            className=" px-4 py-2 bg-blue-500 text-white font-bold rounded  mt-[40px]"
-          >
-            {showMore ? "Show Less" : "Show More"}
-          </button>
-
-          {showMore && (
-            <div className="text-[#FFF] mt-[20px] font-poppins text-[15px] font-medium">
-              <ul className="list-disc pl-[20px]">
-                <li>
-                  Job placement in various fields
-                  as an assistant doctor (Zusage
-                  der Stelle) + hospitation (for
-                  licensed doctors and bachelor's
-                  degree graduates).
-                </li>
-                <li className="mt-2">
-                  Assistance with all bureaucratic
-                  matters (document collection,
-                  translation, and submission).
-                </li>
-                <li className="mt-2">
-                  Registration for the FSP exam.
-                </li>
-                <li className="mt-2">
-                  Support in obtaining a
-                  professional license
-                  (Berufserlaubnis).
-                </li>
-                <li className="mt-2">
-                  Intensive preparation courses
-                  for the FSP exam based on the
-                  specific requirements of the
-                  respective federal state.
-                </li>
-                <li className="mt-2">
-                  The possibility to receive an
-                  appointment for the approbation
-                  exam within 1-2 years of
-                  starting work, without
-                  completing residency in Georgia.
-                </li>
-                <li className="mt-2">
-                  Individual document review for
-                  those who have completed
-                  residency or internships in
-                  post-Soviet countries.
-                </li>
-                <li className="mt-2">
-                  Support in obtaining a
-                  hospitation visa, including
-                  sponsorship.
-                </li>
-                <li className="mt-2">
-                  Necessary documents, common to
-                  all federal states (notarized
-                  copies required for each
-                  document). Individual cases are
-                  reviewed based on specific
-                  circumstances.
-                </li>
-              </ul>
-            </div>
-          )}
-        </div>
-
-        <div>
+        <div className="mt-[80px]">
           <img
             src="/images/document.jpg"
             alt="Document preparation"
-            className="w-full h-full object-scale-down mt-[40px]"
+            className="max-w-full rounded-[30px] shadow-custom-heavy"
           />
-          <p className="text-[#FFF] mt-[40px] font-poppins font-bold text-[20px]">
-            Document Preparation Help
+
+          <p className="text-[#002F6C] mt-[40px] font-poppins font-bold text-[20px] text-center">
+            Documents (requirements, patient file,
+            phone call, vocabulary list)
           </p>
-          <p className="text-[#FFF] mt-[20px] font-poppins text-[15px] font-medium">
-            We assist bachelors in preparing and
-            organizing essential documents for
-            staying and working in Germany.
+
+          <p className="text-[#333333] mt-[20px] font-poppins text-[15px] font-medium text-center">
+            Review all necessary documents,
+            including the requirements, patient
+            file, phone call details, and
+            vocabulary list, to fully understand
+            the medical licensing exam components.
           </p>
+
           <button
             onClick={handleButton}
-            className=" px-4 py-2 bg-blue-500 text-white font-bold rounded mt-[40px]"
+            className="px-4 py-2 bg-[#4836b8] text-white font-bold rounded-[20px] shadow-md hover:bg-[#372799] transition-all mt-[20px]"
           >
             {showMore ? "Show Less" : "Show More"}
           </button>
 
           {showMore && (
-            <div className="text-[#FFF] mt-[20px] font-poppins text-[15px] font-medium">
+            <div className="text-[#333333] mt-[20px] font-poppins text-[15px] font-medium">
               <ul className="list-disc pl-[20px]">
-                <li>
-                  Job placement in various fields
-                  as an assistant doctor (Zusage
-                  der Stelle) + hospitation (for
-                  licensed doctors and bachelor's
-                  degree graduates).
-                </li>
-                <li className="mt-2">
-                  Assistance with all bureaucratic
-                  matters (document collection,
-                  translation, and submission).
-                </li>
-                <li className="mt-2">
-                  Registration for the FSP exam.
-                </li>
-                <li className="mt-2">
-                  Support in obtaining a
-                  professional license
-                  (Berufserlaubnis).
-                </li>
-                <li className="mt-2">
-                  Intensive preparation courses
-                  for the FSP exam based on the
-                  specific requirements of the
-                  respective federal state.
-                </li>
-                <li className="mt-2">
-                  The possibility to receive an
-                  appointment for the approbation
-                  exam within 1-2 years of
-                  starting work, without
-                  completing residency in Georgia.
-                </li>
-                <li className="mt-2">
-                  Individual document review for
-                  those who have completed
-                  residency or internships in
-                  post-Soviet countries.
-                </li>
-                <li className="mt-2">
-                  Support in obtaining a
-                  hospitation visa, including
-                  sponsorship.
-                </li>
-                <li className="mt-2">
-                  Necessary documents, common to
-                  all federal states (notarized
-                  copies required for each
-                  document). Individual cases are
-                  reviewed based on specific
-                  circumstances.
+                <li className="leading-relaxed">
+                  In the second part of the exam,
+                  you will first receive a medical
+                  request form that must be fully
+                  completed. Next, you will be
+                  given further information about
+                  your patient in the form of a
+                  file that may include a medical
+                  report, findings from CT, X-ray,
+                  ultrasound, endoscopy, and
+                  laboratory results. A colleague
+                  will also provide information
+                  about the patient (film). The
+                  laboratory will contact you by
+                  phone to provide lab results for
+                  another patient, which you must
+                  later relay correctly with name
+                  and date of birth. At the end of
+                  this part of the exam, you will
+                  receive a vocabulary list with
+                  medical terms that you must
+                  translate into layman’s terms.
+                  In this task, you must also
+                  understand and mark anatomical
+                  locations on a diagram (e.g.,
+                  “below the right knee joint”).
+                  You have 40 minutes for this
+                  part of the exam.
                 </li>
               </ul>
             </div>
@@ -258,29 +184,7 @@ export default function Services({
         </div>
       </div>
 
-      <div className="mt-[50px] mr-[20px] ml-[20px]">
-        <p className="text-[#fff]  text-center font-poppins font-extrabold text-[30px]">
-          about us
-        </p>
-        <p className="text-[#fff] mt-[50px] font-poppins ">
-          Dr. [Vladimer Shvangiradze] is one of
-          the co-founders of our project. He began
-          his medical journey at Tbilisi State
-          Medical University (TSMU) in Georgia,
-          where he earned his degree in medicine.
-          After completing his studies, he moved
-          to Belarus to gain practical experience
-          in the healthcare system. His commitment
-          to advancing his career then led him to
-          Germany, where he now practices as a
-          licensed doctor. Dr. [Vladimer
-          Shvangiradze]'s diverse international
-          background and dedication to
-          professional growth inspire our mission
-          to assist other medical professionals in
-          pursuing opportunities abroad.
-        </p>
-      </div>
+      <About />
     </section>
   );
 }

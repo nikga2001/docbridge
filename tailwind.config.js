@@ -6,6 +6,12 @@ export default {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        "custom-heavy":
+          "-1px 6px 114px 17px rgba(36, 70, 80, 80)",
+        "custom-low":
+          "0px -2px 136px 7px rgba(52, 56, 86, 16)",
+      },
       backgroundImage: {
         "hero-photo":
           "url('/images/photo-6.jpg')",
@@ -15,11 +21,16 @@ export default {
         operate: "./images/operation.jpg",
 
         lado: "./images/lado-surgery.jpg",
+        whatsapp: "./images/whatsapp.png",
+        german: "./images/photo-3.jpg",
+        germany: "./images/germany.png",
+        russia: "./images/russia.png",
       },
 
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         Roboto: ["Roboto-Mono", "monospace;"],
+        montserrat: ["Montserrat", "sans-serif"],
       },
     },
   },
