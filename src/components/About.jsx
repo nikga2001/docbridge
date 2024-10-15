@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="mt-[50px] bg-operate py-[50px] flex text-center lg:mt-[0]">
+    <div className="mt-[50px] bg-operate py-[50px] md:mt-[80px] flex text-center lg:mt-[0]">
       <div className="mr-[20px] ml-[20px] md:mx-[100px] lg:mx-[200px] ">
         <p className="text-[#002F6C] text-center font-montserrat font-extrabold text-[30px] tracking-wide md:text-[50px] lg:text-[40px]">
           About Us
