@@ -31,9 +31,9 @@ export default function Form({
         <div className="absolute top-0 left-0 right-0 flex justify-between items-center p-3 md:p-6 w-full z-20">
           <div>
             <img
-              src="images/logo-9.png"
+              src="images/lg-5.png"
               alt="Site Logo"
-              className="w-[100px]   hover:brightness-75 transition duration-300 ease-in-out"
+              className="w-[100px] lg:w-[12%]  hover:brightness-75 transition duration-300 ease-in-out"
             />
           </div>
 
@@ -42,24 +42,33 @@ export default function Form({
               <img
                 src="images/germany.png"
                 alt="Germany Flag"
-                className="w-[30px] mt-[-55px] hover:brightness-75 transition duration-300 ease-in-out shadow-custom-heavy rounded-full opacity-100"
+                className="w-[30px] lg:mt-[-80px] mt-[-50px] hover:brightness-75 transition duration-300 ease-in-out shadow-custom-heavy rounded-full opacity-100"
               />
+              <p className="text-[#fff] font-bebas text-[14px] mt-[3px] tracking-[0.1em]">
+                Ger
+              </p>
             </button>
 
             <button>
               <img
                 src="images/georgia.png"
                 alt="Georgia Flag"
-                className="w-[30px] mt-[-55px] hover:brightness-75 transition duration-300 ease-in-out shadow-custom-heavy rounded-full opacity-100"
+                className="w-[30px] lg:mt-[-80px] mt-[-49.5px] hover:brightness-75 transition duration-300 ease-in-out shadow-custom-heavy rounded-full opacity-100"
               />
+              <p className="text-[#fff] font-bebas text-[14px] mt-[3px] tracking-[0.1em]">
+                Geo
+              </p>
             </button>
 
             <button>
               <img
                 src="images/england.png"
                 alt="England Flag"
-                className="w-[30px]  mt-[-55px] hover:brightness-75 transition duration-300 ease-in-out shadow-custom-heavy rounded-full opacity-100"
+                className="w-[30px] lg:mt-[-80px] mt-[-50px] hover:brightness-75 transition duration-300 ease-in-out shadow-custom-heavy rounded-full opacity-100"
               />
+              <p className="text-[#fff] font-bebas text-[14px] mt-[3px] tracking-[0.1em]">
+                Eng
+              </p>
             </button>
           </div>
         </div>
@@ -67,11 +76,11 @@ export default function Form({
         <div className="absolute inset-0 bg-gradient-to-r from-[#10465c] to-[#772b2b] opacity-65 z-10"></div>
 
         <div className=" mt-[60px] relative z-20 px-4 sm:px-8 lg:px-12">
-          <h1 className="font-extrabold text-[#E5E5E5] font-montserrat text-[25px] sm:text-[32px] lg:text-[36px] tracking-wide drop-shadow-md lg:mt-[px]  ">
+          <h1 className="font-extrabold text-[#E5E5E5] font-montserrat text-[25px] sm:text-[32px] lg:text-[40px] tracking-wide drop-shadow-md lg:mt-[px]  ">
             Continuation of a Medical Career in
             Germany
           </h1>
-          <p className="mt-12 text-[#CCCCCC] font-montserrat text-[15px] sm:text-[18px] lg:text-[18px] font-bold tracking-wide drop-shadow-sm leading-relaxed md:font-bold lg:mx-[30px]">
+          <p className="mt-12 text-[#CCCCCC] font-montserrat text-[15px] sm:text-[18px] lg:text-[20px] font-bold tracking-wide drop-shadow-sm leading-relaxed md:font-bold lg:mx-[150px]">
             Germany offers excellent opportunities
             for medical professionals, both for
             graduates with a bachelor's degree and
@@ -90,12 +99,12 @@ export default function Form({
           <img
             src="/images/photo-2.jpg"
             alt="Description of photo 6"
-            className="w-full h-auto rounded-lg shadow-custom-low hover:shadow-2xl transition-shadow duration-300 md:w-[400px] lg:w-[300px]"
+            className="w-full h-auto rounded-lg shadow-custom-low hover:shadow-2xl transition-shadow duration-300 md:w-[400px] lg:w-[30%]"
           />
 
           <h2 className="text-[#002F6C] mt-[20px] font-poppins text-[30px] text-center font-bold md:ml-[20px] md:text-[40px]">
             Transfer Your Career Today{" "}
-            <p className="text-[#002F6C] mt-[50px] font-poppins text-[16px] font-medium md:text-[18px] lg:mx-[45px] ">
+            <p className="text-[#002F6C] mt-[50px] font-poppins text-[16px] font-medium md:text-[18px] lg:mx-[150px] lg:text-[23px] lg:mt-[100px] ">
               If you hold a bachelor’s degree in
               medicine or are specialized in a
               specific field, Germany offers

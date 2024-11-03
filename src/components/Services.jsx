@@ -114,6 +114,36 @@ export default function Services({
               alt="2"
               className="w-[250px] h-[200px] rounded-[10px] object-cover"
             />
+            <img
+              src="/images/photo-2.jpg"
+              alt="2"
+              className="w-[250px] h-[200px] rounded-[10px] object-cover"
+            />
+            <img
+              src="/images/photo-2.jpg"
+              alt="2"
+              className="w-[250px] h-[200px] rounded-[10px] object-cover"
+            />
+            <img
+              src="/images/photo-2.jpg"
+              alt="2"
+              className="w-[250px] h-[200px] rounded-[10px] object-cover"
+            />
+            <img
+              src="/images/photo-2.jpg"
+              alt="2"
+              className="w-[250px] h-[200px] rounded-[10px] object-cover"
+            />
+            <img
+              src="/images/photo-2.jpg"
+              alt="2"
+              className="w-[250px] h-[200px] rounded-[10px] object-cover"
+            />
+            <img
+              src="/images/photo-2.jpg"
+              alt="2"
+              className="w-[250px] h-[200px] rounded-[10px] object-cover"
+            />
           </div>
         </div>
       </div>

@@ -31,6 +31,7 @@ export default {
         poppins: ["Poppins", "sans-serif"],
         Roboto: ["Roboto-Mono", "monospace;"],
         montserrat: ["Montserrat", "sans-serif"],
+        bebas: ["Bebas Neue", "sans-serif"],
       },
     },
   },
