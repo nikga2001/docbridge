@@ -13,10 +13,12 @@ import ServiceExam from "./components/ServiceExam";
 import ServiceInforamtion from "./components/ServiceInforamtion";
 import ServiceDocumentation from "./components/ServiceDocumentation";
 import ServicePrepare from "./components/ServicePrepare";
+import ScrollToTop from "./ScrollOnTop";
 function App() {
   return (
     <Router>
       <div>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route

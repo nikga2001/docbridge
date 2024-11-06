@@ -6,7 +6,7 @@ export default function Documentation() {
   const navigate = useNavigate();
   const serviceId = 5;
   const handleButton = () => {
-    navigate("/service-documentation");
+    navigate("/service-prepare");
   };
 
   return (

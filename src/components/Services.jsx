@@ -79,48 +79,48 @@ export default function Services({
               className="w-[250px] h-[200px] rounded-[10px] object-cover"
             />
             <img
-              src="/images/photo-4.jpg"
+              src="/images/branderburgs.jpg"
               alt="4"
               className="w-[250px] h-[200px] rounded-[10px] object-cover"
             />
             <img
-              src="/images/photo-5.jpg"
+              src="/images/bremen.jpg"
               alt="5"
               className="w-[250px] h-[200px] rounded-[10px] object-cover"
             />
             <img
-              src="/images/photo-6.jpg"
+              src="/images/hamburg.jpg"
               alt="6"
               className="w-[250px] h-[200px] rounded-[10px] object-cover"
             />
             <img
-              src="/images/photo-3.jpg"
+              src="/images/hese.jpg"
               alt="7"
               className="w-[250px] h-[200px] rounded-[10px] object-cover"
             />
             <img
-              src="/images/photo-4.jpg"
+              src="/images/hanover.jpg"
               alt="8"
               className="w-[250px] h-[200px] rounded-[10px] object-cover"
             />
 
             <img
-              src="/images/photo-1.jpg"
+              src="/images/munichas.jpg"
               alt="1"
               className="w-[250px] h-[200px] rounded-[10px] object-cover"
             />
             <img
-              src="/images/photo-2.jpg"
+              src="/images/bl.jpg"
               alt="2"
               className="w-[250px] h-[200px] rounded-[10px] object-cover"
             />
             <img
-              src="/images/photo-2.jpg"
+              src="/images/brl.webp"
               alt="2"
               className="w-[250px] h-[200px] rounded-[10px] object-cover"
             />
             <img
-              src="/images/photo-2.jpg"
+              src="/images/trg.jpg"
               alt="2"
               className="w-[250px] h-[200px] rounded-[10px] object-cover"
             />

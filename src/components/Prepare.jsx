@@ -6,7 +6,7 @@ export default function Prepare() {
   const navigate = useNavigate();
   const serviceId = 5;
   const handleButton = () => {
-    navigate("/service-prepare");
+    navigate("/service-information");
   };
 
   return (

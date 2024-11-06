@@ -11,25 +11,24 @@ export default function Footer() {
         />
       </div>
 
-      <div className="flex items-center space-x-[10px] flex-nowrap mr-[50px]">
-        {/* Icons and Phone Number together */}
+      <div className="flex items-center space-x-[12px] ml-auto flex-nowrap md:mr-[10px] lg:mr-[130px] xl:mr-[90px]">
+        {/* Icons and Phone Number together at the end */}
         <img
           src="/images/whatsapp.png"
           alt="WhatsApp logo"
-          className="w-[24px]"
+          className="w-[24px] md:w-[40px]"
         />
         <img
           src="/images/viber.png"
           alt="Viber logo"
-          className="w-[24px] rounded-[50px]"
+          className="w-[24px] rounded-[50px] md:w-[40px]"
         />
         <img
           src="/images/telegram.png"
           alt="Telegram logo"
-          className="w-[24px]"
+          className="w-[24px] md:w-[40px]"
         />
-        {/* Phone number placed next to the icons */}
-        <span className="text-[#fff] font-poppins text-[13px] whitespace-nowrap">
+        <span className="text-[#fff] font-poppins text-[13px] md:text-[18px] whitespace-nowrap">
           +49 176 37376468
         </span>
       </div>
