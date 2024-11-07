@@ -14,6 +14,7 @@ import ServiceInforamtion from "./components/ServiceInforamtion";
 import ServiceDocumentation from "./components/ServiceDocumentation";
 import ServicePrepare from "./components/ServicePrepare";
 import ScrollToTop from "./ScrollOnTop";
+import "./i18n";
 function App() {
   return (
     <Router>
