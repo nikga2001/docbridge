@@ -6,6 +6,7 @@ import Exam from "./Exam";
 import About from "./About";
 import Prepare from "./Prepare";
 import Documentation from "./Documentation";
+import { useTranslation } from "react-i18next";
 export default function Services({
   showMore,
   setShowMore,
@@ -13,11 +14,12 @@ export default function Services({
   const handleButton = () => {
     setShowMore(!showMore);
   };
+  const { t } = useTranslation();
   return (
     <section className="mt-[30px] bg-[#F0F4F8] lg:mt-[0px]">
       <div className="mx-[15px]">
         <p className="text-[#002F6C] font-poppins text-[40px] sm:text-[45px] lg:text-[50px] font-black pt-[60px] text-center tracking-wide md:text-[50px] md:font-extrabold">
-          Our Services
+          {t("services")}
         </p>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-12 ">

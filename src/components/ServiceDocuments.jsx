@@ -3,53 +3,10 @@ import {
   useNavigate,
   Link,
 } from "react-router-dom";
-// Ensure useNavigate is imported
-
-const documentDetails = {
-  1: {
-    title: "",
-    description: "Passport",
-  },
-  2: {
-    title: "",
-    description: "Birth certificate ",
-  },
-  3: {
-    title: "",
-    description: "resume",
-  },
-  4: {
-    title: "",
-    description: "diploma + annex ",
-  },
-  5: {
-    title: "",
-    description:
-      "Medical certificate with vaccinations.",
-  },
-  6: {
-    title: "",
-    description:
-      "Criminal record certificate, not older than 3 months.",
-  },
-  7: {
-    description:
-      "At least a B2-level German language certificate (Goethe-Institut, TELC, TestDaF, ÖSD, DSH, ECL).",
-    title: `•  Goethe-Institut
-    • TELC (The European Language Certificates)
-    • TestDaF (Test Deutsch als Fremdsprache)
-    • ÖSD (Austrian German Language Diploma)
-    • DSH (German Language Test for University Admission)
-    • ECL (European Consortium for the Certificate of Attainment in Modern Languages)`,
-  },
-  8: {
-    title: "",
-    description:
-      "For Kenntnisprüfung: an additional 6-year university curriculum is required.",
-  },
-};
+import { useTranslation } from "react-i18next";
 
 export default function ServiceDocuments() {
+  const { i18n } = useTranslation();
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] =
     useState(false);
@@ -57,6 +14,141 @@ export default function ServiceDocuments() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const { t } = useTranslation();
+
+  const documentDetails =
+    i18n.language == "en"
+      ? {
+          1: {
+            title: "",
+            description: "Passport",
+          },
+          2: {
+            title: "",
+            description: "Birth certificate ",
+          },
+          3: {
+            title: "",
+            description: "resume",
+          },
+          4: {
+            title: "",
+            description: "diploma + annex ",
+          },
+          5: {
+            title: "",
+            description:
+              "Medical certificate with vaccinations.",
+          },
+          6: {
+            title: "",
+            description:
+              "Criminal record certificate, not older than 3 months.",
+          },
+          7: {
+            description:
+              "At least a B2-level German language certificate (Goethe-Institut, TELC, TestDaF, ÖSD, DSH, ECL).",
+            title: `•  Goethe-Institut
+        • TELC (The European Language Certificates)
+        • TestDaF (Test Deutsch als Fremdsprache)
+        • ÖSD (Austrian German Language Diploma)
+        • DSH (German Language Test for University Admission)
+        • ECL (European Consortium for the Certificate of Attainment in Modern Languages)`,
+          },
+          8: {
+            title: "",
+            description:
+              "For Kenntnisprüfung: an additional 6-year university curriculum is required.",
+          },
+        }
+      : i18n.language == "gr"
+      ? {
+          1: {
+            title: "",
+            description: "Reisepass",
+          },
+          2: {
+            title: "",
+            description: "Geburtsurkunde",
+          },
+          3: {
+            title: "",
+            description: "Lebenslauf",
+          },
+          4: {
+            title: "",
+            description:
+              "Abschlusszeugnis + Anhang ",
+          },
+          5: {
+            title: "",
+            description:
+              "Ärztliches Attest mit Impfungen.",
+          },
+          6: {
+            title: "",
+            description:
+              "Strafregisterbescheinigung, nicht älter als 3 Monate.",
+          },
+          7: {
+            description:
+              "Mindestens ein deutsches Sprachzertifikat auf B2-Niveau (Goethe-Institut, TELC, TestDaF, ÖSD, DSH, ECL).",
+            title: `•  Goethe-Institut
+        • TELC (Die Europäischen Sprachenzertifikate)
+        • TestDaF (Test of German as a Foreign Language)
+        • ÖSD (Österreichisches Sprachdiplom Deutsch)
+        • DSH (Deutsche Sprachprüfung für den Hochschulzugang)
+        • ECL (European Consortium for the Certificate of Attainment in Modern Languages)`,
+          },
+          8: {
+            title: "",
+            description:
+              "Für die Kenntnisprüfung ist ein zusätzliches 6-jähriges Hochschulstudium erforderlich.",
+          },
+        }
+      : {
+          1: {
+            title: "",
+            description: "პასპორტი",
+          },
+          2: {
+            title: "",
+            description: "დაბადების მოწმობა",
+          },
+          3: {
+            title: "",
+            description: "რეზიუმე",
+          },
+          4: {
+            title: "",
+            description: "დიპლომი + დანართი ",
+          },
+          5: {
+            title: "",
+            description:
+              "სამედიცინო ცნობა ვაქცინაციით.",
+          },
+          6: {
+            title: "",
+            description:
+              "ნასამართლეობის ცნობა არაუმეტეს 3 თვის",
+          },
+          7: {
+            description:
+              "მინიმუმ ბ2 დონის GER (Gemeinsame Europäische Referenzrahmen) აღიარებული გერმანული ენის სერტიფიკატი:",
+            title: `•  Goethe-Institut
+          • TELC (The European Language Certificates)
+          • TestDaF (Test Deutsch als Fremdsprache)
+          • ÖSD (Austrian German Language Diploma)
+          • DSH (German Language Test for University Admission)
+          • ECL (European Consortium for the Certificate of Attainment in Modern Languages)`,
+          },
+          8: {
+            title: "",
+            description:
+              "ვისაც სააპრობაციო გამოცდაზე გასვლის სურვილი აქვთ, დამატებით ესაჭიროებათ უნივერსიტეტის 6 წლიანი სილაბუსი.",
+          },
+        };
 
   return (
     <div className="pb-[100px] bg-gradient-to-b from-[#e6f7ff] to-[#f9f9f9]">
@@ -65,7 +157,11 @@ export default function ServiceDocuments() {
           <img
             src="images/lg-5.png"
             alt="Site Logo"
-            className="w-[100px] lg:w-[40%] xl:w-[30%]   hover:brightness-75 transition duration-300 ease-in-out"
+            className={`w-[100px] lg:w-[40%] xl:w-[30%] ${
+              i18n.language === "ka"
+                ? "min-w-[120px]"
+                : ""
+            } hover:brightness-75 transition duration-300 ease-in-out`}
             onClick={() => navigate("/form")}
           />
         </div>
@@ -90,44 +186,43 @@ export default function ServiceDocuments() {
         </button>
 
         {/* Navigation Bar for Large Screens */}
-        <nav className="hidden lg:flex lg:space-x-12 lg:text-[16px]  lg:font-bold xl:text-[20px] xl:mr-[80px] ">
+        <nav className="hidden lg:flex lg:space-x-10 lg:text-[16px]  lg:font-bold xl:text-[20px] xl:mr-[80px] ">
           <Link
             to="/service-details"
             className="text-white py-2 px-4 rounded-[20px] transition duration-300 bg-[#002F6C] hover: hover:shadow-none transform hover:-translate-y-1"
           >
-            Team Offers
+            {t("nav_1")}
           </Link>
           <Link
             to="/service-documents"
             className="text-white py-2 px-4 rounded-[20px] transition duration-300 bg-[#002F6C] hover: hover:shadow-none transform hover:-translate-y-1"
           >
-            Requirement Documents
+            {t("nav_2")}
           </Link>
-
           <Link
             to="/service-documentation"
             className="text-white py-2 px-4 rounded-[20px] transition duration-300 bg-[#002F6C] hover: hover:shadow-none transform hover:-translate-y-1"
           >
-            General Documents
+            {t("nav_3")}
           </Link>
 
           <Link
             to="/service-exam"
             className="text-white py-2 px-4 rounded-[20px] transition duration-300 bg-[#002F6C] hover: hover:shadow-none transform hover:-translate-y-1"
           >
-            Language Test
+            {t("nav_4")}
           </Link>
           <Link
             to="/service-information"
             className="text-white py-2 px-4 rounded-[20px] transition duration-300 bg-[#002F6C] hover: hover:shadow-none transform hover:-translate-y-1"
           >
-            About Exam
+            {t("nav_5")}
           </Link>
           <Link
             to="/service-prepare"
             className="text-white py-2 px-4 rounded-[20px] transition duration-300 bg-[#002F6C] hover: hover:shadow-none transform hover:-translate-y-1"
           >
-            Extra Tasks
+            {t("nav_6")}
           </Link>
         </nav>
       </header>
@@ -141,21 +236,22 @@ export default function ServiceDocuments() {
           >
             &times;
           </button>
-          <nav className="flex flex-col items-center space-y-1 md:mt-[100px] mt-[70px]">
+          <nav className="flex flex-col items-center space-y-1 md:mt-[100px] mt-[70px] ">
             <Link
               to="/service-details"
               className="group text-[#f6f1f1] text-[25px] font-bold font-poppins py-2 px-4 rounded hover:bg-[#1f5082] transition duration-300"
               onClick={toggleMenu}
             >
-              Team Offers
+              {t("nav_1")}
               <hr className="border-t-0 h-[1px] bg-gradient-to-r from-[#2b427a] via-[#c58d8d] to-[#2b427a] rounded-full shadow-md mt-[10px] mb-2 opacity-70 group-hover:opacity-100 group-hover:shadow-lg transition duration-300" />
             </Link>
+
             <Link
               to="/service-documents"
               className="text-[#fff]  py-2 px-4 text-[25px] font-bold font-poppins  rounded hover:bg-[#004080] transition duration-300"
               onClick={toggleMenu}
             >
-              Requirement Documents
+              {t("nav_2")}
               <hr className="border-t-0 h-[1px] bg-gradient-to-r from-[#2b427a] via-[#c58d8d] to-[#2b427a] rounded-full shadow-md mt-[10px] mb-2" />
             </Link>
 
@@ -164,7 +260,7 @@ export default function ServiceDocuments() {
               className="text-[#fff]  text-[25px] font-bold font-poppins  py-2 px-4 rounded hover:bg-[#004080] transition duration-300"
               onClick={toggleMenu}
             >
-              General Documents
+              {t("nav_3")}
               <hr className="border-t-0 h-[1px] bg-gradient-to-r from-[#2b427a] via-[#c58d8d] to-[#2b427a] rounded-full shadow-md mt-[10px] mb-2" />
             </Link>
 
@@ -173,7 +269,7 @@ export default function ServiceDocuments() {
               className="text-[#fff]  py-2 px-4 text-[25px] font-bold font-poppins  rounded hover:bg-[#004080] transition duration-300"
               onClick={toggleMenu}
             >
-              Language Test
+              {t("nav_4")}
               <hr className="border-t-0 h-[1px] bg-gradient-to-r from-[#2b427a] via-[#c58d8d] to-[#2b427a] rounded-full shadow-md mt-[10px] mb-2" />
             </Link>
             <Link
@@ -181,7 +277,7 @@ export default function ServiceDocuments() {
               className="text-white  py-2 px-4 text-[25px] font-bold font-poppins  rounded hover:bg-[#004080] transition duration-300"
               onClick={toggleMenu}
             >
-              About Exam
+              {t("nav_5")}
               <hr className="border-t-0 h-[1px] bg-gradient-to-r from-[#2b427a] via-[#c58d8d] to-[#2b427a] rounded-full shadow-md mt-[10px] mb-2" />
             </Link>
             <Link
@@ -189,15 +285,16 @@ export default function ServiceDocuments() {
               className="text-white  py-2 px-4 text-[25px] font-bold font-poppins  rounded hover:bg-[#004080] transition duration-300"
               onClick={toggleMenu}
             >
-              Extra Tasks
+              {t("nav_6")}
               <hr className="border-t-0 h-[1px] bg-gradient-to-r from-[#2b427a] via-[#c58d8d] to-[#2b427a] rounded-full shadow-md mt-[10px] mb-2" />
             </Link>
           </nav>
         </div>
       )}
+
       {/* Section Title */}
       <h1 className="text-center mt-[50px] text-[#002F6C] pb-[30px] font-poppins font-bold text-[28px] leading-relaxed md:text-[32px] lg:text-[36px]">
-        Requirement Documents
+        {t("document_h1")}
       </h1>
 
       {/* Image */}
@@ -241,7 +338,7 @@ export default function ServiceDocuments() {
           onClick={() => navigate("/form")}
           className="mt-4 px-6 py-2 ml-[25px] bg-[#002F6C] text-white font-poppins font-semibold rounded-lg shadow-md hover:bg-[#004080] transition duration-300 ease-in-out transform hover:scale-105 md:ml-[25px]"
         >
-          Back
+          {t("back")}
         </button>
       </div>
     </div>

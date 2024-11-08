@@ -28,7 +28,7 @@ export default function Information() {
 
       <button
         onClick={handleButton}
-        className="px-4 py-2 ml-[5px] bg-[#4836b8] text-white font-bold rounded-[20px] shadow-md hover:bg-[#372799] transition-all md:px-6 md:py-3 md:mt-[13px] md:ml-[30px] lg:ml-[35px] lg:px-4 lg:py-2 lg:mt-[12px] lg:text-[15px]"
+        className="px-4 py-2 ml-[5px] bg-[#4836b8] text-white font-bold rounded-[20px] shadow-md hover:bg-[#372799] transition-all md:px-6 md:py-3 md:mt-[13px] md:ml-[30px] lg:ml-[50px] lg:px-4 lg:py-2 lg:mt-[12px] lg:text-[15px]"
       >
         {t("show_more")}
       </button>

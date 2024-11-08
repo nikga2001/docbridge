@@ -22,6 +22,7 @@ export default function Form({
     setIsDropdownOpen(false);
     i18n.changeLanguage(language); // Change language dynamically
   };
+  console.log(i18n.language);
 
   // Mapping of languages to image paths
   const languageFlags = {
