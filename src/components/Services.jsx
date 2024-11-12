@@ -68,83 +68,83 @@ export default function Services({
             <img
               src="/images/vutemberg.jpg"
               alt="1"
-              className="w-[250px] h-[200px] rounded-[10px] object-cover"
+              className="w-[250px] xl:w-[300px] xl:h-[250px] h-[200px] rounded-[10px] object-cover"
             />
             <img
               src="/images/munich.jpg"
               alt="2"
-              className="w-[250px] h-[200px] rounded-[10px] object-cover"
+              className="w-[250px] h-[200px] xl:w-[300px] xl:h-[250px]  rounded-[10px] object-cover"
             />
             <img
               src="/images/berlin.jpg"
               alt="3"
-              className="w-[250px] h-[200px] rounded-[10px] object-cover"
+              className="w-[250px] h-[200px] xl:w-[300px] xl:h-[250px]  rounded-[10px] object-cover"
             />
             <img
-              src="/images/branderburgs.jpg"
+              src="/images/ph-10.jpg"
               alt="4"
-              className="w-[250px] h-[200px] rounded-[10px] object-cover"
+              className="w-[250px] h-[200px] xl:w-[300px] xl:h-[250px]  rounded-[10px] object-cover"
             />
             <img
               src="/images/bremen.jpg"
               alt="5"
-              className="w-[250px] h-[200px] rounded-[10px] object-cover"
+              className="w-[250px] h-[200px] xl:w-[300px] xl:h-[250px]  rounded-[10px] object-cover"
             />
             <img
               src="/images/hamburg.jpg"
               alt="6"
-              className="w-[250px] h-[200px] rounded-[10px] object-cover"
+              className="w-[250px] h-[200px] xl:w-[300px] xl:h-[250px]  rounded-[10px] object-cover"
             />
             <img
               src="/images/hese.jpg"
               alt="7"
-              className="w-[250px] h-[200px] rounded-[10px] object-cover"
+              className="w-[250px] h-[200px] xl:w-[300px] xl:h-[250px]  rounded-[10px] object-cover"
             />
             <img
-              src="/images/hanover.jpg"
+              src="/images/ph-1.webp"
               alt="8"
-              className="w-[250px] h-[200px] rounded-[10px] object-cover"
+              className="w-[250px] h-[200px] xl:w-[300px] xl:h-[250px]  rounded-[10px] object-cover"
             />
 
             <img
               src="/images/munichas.jpg"
               alt="1"
-              className="w-[250px] h-[200px] rounded-[10px] object-cover"
+              className="w-[250px] h-[200px]  xl:w-[300px] xl:h-[250px] rounded-[10px] object-cover"
             />
             <img
               src="/images/bl.jpg"
               alt="2"
-              className="w-[250px] h-[200px] rounded-[10px] object-cover"
+              className="w-[250px] h-[200px] xl:w-[300px] xl:h-[250px]  rounded-[10px] object-cover"
             />
             <img
               src="/images/brl.webp"
               alt="2"
-              className="w-[250px] h-[200px] rounded-[10px] object-cover"
+              className="w-[250px] h-[200px] xl:w-[300px] xl:h-[250px]  rounded-[10px] object-cover"
             />
             <img
               src="/images/trg.jpg"
               alt="2"
-              className="w-[250px] h-[200px] rounded-[10px] object-cover"
+              className="w-[250px] h-[200px] xl:w-[300px] xl:h-[250px]  rounded-[10px] object-cover"
             />
             <img
               src="/images/photo-2.jpg"
               alt="2"
-              className="w-[250px] h-[200px] rounded-[10px] object-cover"
+              className="w-[250px] h-[200px] xl:w-[300px] xl:h-[250px]  rounded-[10px] object-cover"
             />
             <img
               src="/images/photo-2.jpg"
               alt="2"
-              className="w-[250px] h-[200px] rounded-[10px] object-cover"
+              className="w-[250px] h-[200px] xl:w-[300px] xl:h-[250px]  rounded-[10px] object-cover"
             />
             <img
               src="/images/photo-2.jpg"
               alt="2"
-              className="w-[250px] h-[200px] rounded-[10px] object-cover"
+              className="w-[250px] h-[200px] xl:w-[300px] xl:h-[250px]  rounded-[10px] object-cover"
             />
             <img
               src="/images/photo-2.jpg"
               alt="2"
-              className="w-[250px] h-[200px] rounded-[10px] object-cover"
+              className="w-[250px] h-[200px] xl:w-[300px] xl:h-[250px]  rounded-[10px] object-cover"
             />
           </div>
         </div>

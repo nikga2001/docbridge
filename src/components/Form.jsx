@@ -33,6 +33,24 @@ export default function Form({
 
   return (
     <main>
+      <style>
+        {`
+          @keyframes slideshow {
+            0% { background-image: url('/images/photo-3.jpg'); }
+            20% { background-image: url('/images/photo-3.jpg'); }
+            25% { background-image: url('/images/photo-4.jpg'); }
+            45% { background-image: url('/images/photo-4.jpg'); }
+            50% { background-image: url('/images/photo-5.jpg'); }
+            70% { background-image: url('/images/photo-5.jpg'); }
+            75% { background-image: url('/images/photo-6.jpg'); }
+            95% { background-image: url('/images/photo-6.jpg'); }
+            100% { background-image: url('/images/photo-1.jpg'); }
+          }
+          .bg-hero-photo {
+            animation: slideshow 30s infinite;
+          }
+        `}
+      </style>
       <div className="relative bg-hero-photo bg-no-repeat bg-cover bg-center h-[550px] lg:h-[750px] flex flex-col items-center justify-center text-center">
         <div className="absolute top-0 left-0 right-0 flex justify-between items-center p-3 md:p-6 w-full z-20">
           <div>
@@ -138,11 +156,11 @@ export default function Form({
           <img
             src="/images/photo-2.jpg"
             alt="Description of photo 6"
-            className="w-full h-auto rounded-lg shadow-custom-low hover:shadow-2xl transition-shadow duration-300 md:w-[48%] lg:w-[45%] xl:w-[44%]"
+            className="w-full h-auto rounded-lg shadow-custom-low hover:shadow-2xl transition-shadow duration-300 md:w-[48%] lg:w-[45%] xl:w-[43%]"
           />
-          <h2 className="text-[#002F6C] mt-[20px] font-poppins text-[30px] text-center font-bold  md:mx-[15px] md:text-[40px] xl:text-[45px]">
+          <h2 className="text-[#002F6C] mt-[20px] font-poppins text-[30px] text-center font-bold  md:mx-[15px] md:text-[40px] xl:text-[45px] xl:mt-[60px]">
             {t("career_title")}
-            <p className="text-[#002F6C] mt-[50px] font-poppins text-[16px] font-medium md:text-[18px] lg:mx-[50px] xl:mx-[80px] xl:py-[10px] xl:text-[28px] lg:text-[23px] lg:text-[25px] lg:mt-[100px]">
+            <p className="text-[#002F6C] mt-[50px] font-poppins text-[16px] font-medium md:text-[18px] lg:mx-[50px] xl:mx-[100px] xl:py-[10px] xl:text-[28px] lg:text-[23px] lg:text-[25px] lg:mt-[100px]">
               {t("career_subtitle")}
             </p>
           </h2>

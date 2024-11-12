@@ -6,28 +6,28 @@
   "services": " Our Services",
 
   "team_title": "Our Team Offers",
-  "team_description": "We assist bachelors in preparing and organizing essential documents for staying and working in Germany.",
+  "team_description": "We assist in preparing and organizing essential documents for staying and working in Germany.",
   "team_h1": "Our Team Offers",
 
   "documents_title": "  Required documents, applicable to all federal states",
   "documents_description": "  We provide guidance and support throughout the job placement and licensing process.",
-  "document_h1": "Required documents",
+  "document_h1": "Required documents, applicable to all federal states",
 
   "documentation_title": "Extra Tasks in Some Federal States",
-  "documentation_description": " Review all necessary documents, including the requirements, patient file, phone call details, and vocabulary list, to fully understand the medical licensing exam components.",
-  "documentation_h1": "How Does the Medical Exam Work",
+  "documentation_description": " Review the patient file, request the necessary examinations, the phone conversation, and the vocabulary, translating these from Latin to German.",
+  "documentation_h1": "How does the exam work? The exam consists of 3 parts",
 
   "exam_title": "    German language test at the Medical Association",
   "exam_description": " We provide guidance and support throughout  the exam process.",
-  "exam_h1": "German Language Test",
+  "exam_h1": "Requirements for registering for the German language test at the Medical Association",
 
   "information_title": "   General Information on the Form of the Submitted Documents",
   "information_description": "  We assist in preparing and organizing all necessary documents according to German standards.",
-  "inforamtion_h1": "General Documents",
+  "inforamtion_h1": "General Information on the Form of the Submitted Documents",
 
   "prepare_title": "How Does the Medical Exam Work?",
-  "prepare_description": " Understand the structure and key components of the medical licensing exam.",
-  "prepare_h1": "Extra Tasks in Some Federal States",
+  "prepare_description": " Understand the structure and key components of the Medical Language Proficiency Exam.",
+  "prepare_h1": " Additional tasks for the Medical Language Proficiency Examination (FSP) in some federal states",
 
   "about": "About Us",
   "about_1": " Welcome to DOCBRIDGE, your reliable partner for foreign doctors on the path to a successful career in Germany. As experienced physicians who have gone through the recognition process and worked in various German hospitals, we understand the challenges that international doctors face on their journey to Germany – from the medical language exam to the recognition of qualifications and job search.",
@@ -36,10 +36,11 @@
 
   "nav_1": " Team Offers",
   "nav_2": "Requirement Documents",
-  "nav_3": " General Documents",
-  "nav_4": "  Language Test",
+  "nav_3": " General Information",
+  "nav_4": "  FSP Registration",
   "nav_5": " About Exam",
   "nav_6": " Extra Tasks",
+  "contact": "Contact us",
 
   "show_more": "Show More",
   "back": "Back"

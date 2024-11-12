@@ -14,6 +14,8 @@ export default function ServiceInforamtion() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const [isModalOpen, setIsModalOpen] =
+    useState(false);
   const { t } = useTranslation();
 
   const documentDetails =
@@ -132,9 +134,10 @@ export default function ServiceInforamtion() {
           <img
             src="images/lg-5.png"
             alt="Site Logo"
-            className={`w-[100px] lg:w-[40%] xl:w-[30%] ${
-              i18n.language === "ka"
-                ? "min-w-[120px]"
+            className={`w-[100px] lg:w-[40%] xl:w-[25%] ${
+              i18n.language === "ka" ||
+              i18n.language === "gr"
+                ? "min-w-[90px]"
                 : ""
             } hover:brightness-75 transition duration-300 ease-in-out`}
             onClick={() => navigate("/form")}
@@ -161,41 +164,72 @@ export default function ServiceInforamtion() {
         </button>
 
         {/* Navigation Bar for Large Screens */}
-        <nav className="hidden lg:flex lg:space-x-10 lg:text-[16px]  lg:font-bold xl:text-[20px] xl:mr-[80px] ">
+        <nav
+          className={`hidden lg:flex ${
+            i18n.language === "ka"
+              ? "lg:space-x-2 xl:space-x-6 lg:text-[15px] xl:text-[15px] xl:mr-[30px] " // Adjusted for Georgian
+              : i18n.language === "gr"
+              ? "lg:space-x-4 lg:text-[15px] xl:text-[20px] " // Adjusted for German
+              : "lg:space-x-8 lg:text-[16.5px] xl:text-[22px] xl:mr-[70px]" // Default for English
+          } lg:font-bold`}
+        >
           <Link
             to="/service-details"
-            className="text-white py-2 px-4 rounded-[20px] transition duration-300 bg-[#002F6C] hover: hover:shadow-none transform hover:-translate-y-1"
+            className={`text-white py-2 px-4  rounded-[20px] transition duration-300 bg-[#002F6C] transform hover:-translate-y-1 ${
+              i18n.language === "ka"
+                ? "text-cm "
+                : "xl:text-[19px] lg:text-[17px]"
+            }`}
           >
             {t("nav_1")}
           </Link>
           <Link
             to="/service-documents"
-            className="text-white py-2 px-4 rounded-[20px] transition duration-300 bg-[#002F6C] hover: hover:shadow-none transform hover:-translate-y-1"
+            className={`text-white py-2 px-4 rounded-[20px] transition duration-300 bg-[#002F6C] transform hover:-translate-y-1 ${
+              i18n.language === "ka"
+                ? "text-sm"
+                : "xl:text-[19px] lg:text-[17px]"
+            }`}
           >
             {t("nav_2")}
           </Link>
           <Link
             to="/service-documentation"
-            className="text-white py-2 px-4 rounded-[20px] transition duration-300 bg-[#002F6C] hover: hover:shadow-none transform hover:-translate-y-1"
+            className={`text-white py-2 px-4 rounded-[20px] transition duration-300 bg-[#002F6C] transform hover:-translate-y-1 ${
+              i18n.language === "ka"
+                ? "text-sm"
+                : "xl:text-[19px] lg:text-[17px]"
+            }`}
           >
             {t("nav_3")}
           </Link>
-
           <Link
             to="/service-exam"
-            className="text-white py-2 px-4 rounded-[20px] transition duration-300 bg-[#002F6C] hover: hover:shadow-none transform hover:-translate-y-1"
+            className={`text-white py-2 px-4 rounded-[20px] transition duration-300 bg-[#002F6C] transform hover:-translate-y-1 ${
+              i18n.language === "ka"
+                ? "text-sm"
+                : "xl:text-[19px] lg:text-[17px]"
+            }`}
           >
             {t("nav_4")}
           </Link>
           <Link
             to="/service-information"
-            className="text-white py-2 px-4 rounded-[20px] transition duration-300 bg-[#002F6C] hover: hover:shadow-none transform hover:-translate-y-1"
+            className={`text-white py-2 px-4 rounded-[20px] transition duration-300 bg-[#002F6C] transform hover:-translate-y-1 ${
+              i18n.language === "ka"
+                ? "text-sm"
+                : "xl:text-[19px] lg:text-[17px]"
+            }`}
           >
             {t("nav_5")}
           </Link>
           <Link
             to="/service-prepare"
-            className="text-white py-2 px-4 rounded-[20px] transition duration-300 bg-[#002F6C] hover: hover:shadow-none transform hover:-translate-y-1"
+            className={`text-white py-2 px-4 rounded-[20px] transition duration-300 bg-[#002F6C] transform hover:-translate-y-1 ${
+              i18n.language === "ka"
+                ? "text-sm"
+                : "xl:text-[19px] lg:text-[17px]"
+            }`}
           >
             {t("nav_6")}
           </Link>
@@ -211,39 +245,41 @@ export default function ServiceInforamtion() {
           >
             &times;
           </button>
-          <nav className="flex flex-col items-center space-y-1 md:mt-[100px] mt-[70px]">
+          <nav className="flex flex-col items-center space-y-1 md:mt-[100px] mt-[70px] ">
             <Link
               to="/service-details"
-              className="group text-[#f6f1f1] text-[25px] font-bold font-poppins py-2 px-4 rounded hover:bg-[#1f5082] transition duration-300"
+              className="group text-[#f6f1f1] text-[24px] font-bold font-poppins py-2 px-4 rounded hover:bg-[#1f5082] transition duration-300"
               onClick={toggleMenu}
             >
               {t("nav_1")}
-              <hr className="border-t-0 h-[1px] bg-gradient-to-r from-[#2b427a] via-[#c58d8d] to-[#2b427a] rounded-full shadow-md mt-[10px] mb-2 opacity-70 group-hover:opacity-100 group-hover:shadow-lg transition duration-300" />
+              <hr className="border-t-0 h-[1px] bg-gradient-to-r from-[#2b427a] via-[#c58d8d] to-[#2b427a] rounded-full shadow-md mt-[4px] mb-1 opacity-70 group-hover:opacity-100 group-hover:shadow-lg transition duration-300" />
+            </Link>
+
+            <Link
+              to="/service-documents"
+              className="text-[#fff]  py-2 px-4 text-[24px] font-bold font-poppins  rounded hover:bg-[#004080] transition duration-300"
+              onClick={toggleMenu}
+            >
+              {t("nav_2")}
+              <hr className="border-t-0 h-[1px] bg-gradient-to-r from-[#2b427a] via-[#c58d8d] to-[#2b427a] rounded-full shadow-md mt-[4px] mb-1" />
             </Link>
 
             <Link
               to="/service-documentation"
-              className="text-[#fff]  text-[25px] font-bold font-poppins  py-2 px-4 rounded hover:bg-[#004080] transition duration-300"
-              onClick={toggleMenu}
-            >
-              {t("nav_2")}
-              <hr className="border-t-0 h-[1px] bg-gradient-to-r from-[#2b427a] via-[#c58d8d] to-[#2b427a] rounded-full shadow-md mt-[10px] mb-2" />
-            </Link>
-            <Link
-              to="/service-documents"
-              className="text-[#fff]  py-2 px-4 text-[25px] font-bold font-poppins  rounded hover:bg-[#004080] transition duration-300"
+              className="text-[#fff]  text-[24px] font-bold font-poppins  py-2 px-4 rounded hover:bg-[#004080] transition duration-300"
               onClick={toggleMenu}
             >
               {t("nav_3")}
-              <hr className="border-t-0 h-[1px] bg-gradient-to-r from-[#2b427a] via-[#c58d8d] to-[#2b427a] rounded-full shadow-md mt-[10px] mb-2" />
+              <hr className="border-t-0 h-[1px] bg-gradient-to-r from-[#2b427a] via-[#c58d8d] to-[#2b427a] rounded-full shadow-md mt-[4px] mb-1" />
             </Link>
+
             <Link
               to="/service-exam"
               className="text-[#fff]  py-2 px-4 text-[25px] font-bold font-poppins  rounded hover:bg-[#004080] transition duration-300"
               onClick={toggleMenu}
             >
               {t("nav_4")}
-              <hr className="border-t-0 h-[1px] bg-gradient-to-r from-[#2b427a] via-[#c58d8d] to-[#2b427a] rounded-full shadow-md mt-[10px] mb-2" />
+              <hr className="border-t-0 h-[1px] bg-gradient-to-r from-[#2b427a] via-[#c58d8d] to-[#2b427a] rounded-full shadow-md mt-[4px] mb-1" />
             </Link>
             <Link
               to="/service-information"
@@ -251,7 +287,7 @@ export default function ServiceInforamtion() {
               onClick={toggleMenu}
             >
               {t("nav_5")}
-              <hr className="border-t-0 h-[1px] bg-gradient-to-r from-[#2b427a] via-[#c58d8d] to-[#2b427a] rounded-full shadow-md mt-[10px] mb-2" />
+              <hr className="border-t-0 h-[1px] bg-gradient-to-r from-[#2b427a] via-[#c58d8d] to-[#2b427a] rounded-full shadow-md mt-[4px] mb-1" />
             </Link>
             <Link
               to="/service-prepare"
@@ -259,11 +295,12 @@ export default function ServiceInforamtion() {
               onClick={toggleMenu}
             >
               {t("nav_6")}
-              <hr className="border-t-0 h-[1px] bg-gradient-to-r from-[#2b427a] via-[#c58d8d] to-[#2b427a] rounded-full shadow-md mt-[10px] mb-2" />
+              <hr className="border-t-0 h-[1px] bg-gradient-to-r from-[#2b427a] via-[#c58d8d] to-[#2b427a] rounded-full shadow-md mt-[4px] mb-1" />
             </Link>
           </nav>
         </div>
       )}
+
       {/* Section Title */}
       <h1 className="text-center mt-[50px] text-[#002F6C] pb-[30px] font-poppins font-bold text-[28px] leading-relaxed md:text-[32px] lg:text-[36px]">
         {t("documentation_h1")}

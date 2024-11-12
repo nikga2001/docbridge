@@ -32,6 +32,7 @@ export default {
         Roboto: ["Roboto-Mono", "monospace;"],
         montserrat: ["Montserrat", "sans-serif"],
         bebas: ["Bebas Neue", "sans-serif"],
+        geo: ["Noto Sans Georgian", "sans-serif"],
       },
     },
   },
