@@ -25,6 +25,7 @@ export default {
         german: "./images/photo-3.jpg",
         germany: "./images/germany.png",
         russia: "./images/russia.png",
+        logo: "./images/lg-5.png",
       },
 
       fontFamily: {

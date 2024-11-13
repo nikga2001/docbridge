@@ -4,6 +4,7 @@ import {
   Link,
 } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import Header from "./Header";
 
 export default function ServiceInforamtion() {
   const { i18n } = useTranslation();
@@ -23,7 +24,7 @@ export default function ServiceInforamtion() {
       ? {
           1: {
             title: "",
-            description: `Doctor-patient conversation You will conduct an anamnesis interview with the
+            description: `Doctor-patient conversation: You will conduct an anamnesis interview with the
   patient. The role of the patient is played by an actor who will provide you with
   predetermined information about their health condition. A pre-printed anamnesis sheet
   will be provided for taking notes, but it will not be evaluated as part of the exam. You will
@@ -35,7 +36,7 @@ export default function ServiceInforamtion() {
           },
           2: {
             title: "",
-            description: ` Epicrisis Based on the given documents, you must write a discharge summary
+            description: ` Epicrisis: Based on the given documents, you must write a discharge summary
   (epicrisis) on the computer. You should cover the current complaints, conducted
   investigations, and the resulting findings. Particular attention must be paid to grammar,
   spelling, and expression. Full sentences must be written, and various methods of text
@@ -46,7 +47,7 @@ export default function ServiceInforamtion() {
           },
           3: {
             title: "",
-            description: ` Doctor-doctor conversation In the fourth part of the exam, you will present your
+            description: ` Doctor-doctor conversation: You will present your
   patient to the attending examiners. In this conversation, you can use medical
   terminology. Please briefly summarize the current findings, the medical report from the
   file, the colleague’s`,
@@ -56,7 +57,7 @@ export default function ServiceInforamtion() {
       ? {
           1: {
             title: "",
-            description: `Arzt-Patienten-Gespräch Sie führen ein Anamnesegespräch mit dem
+            description: `Arzt-Patienten-Gespräch: Sie führen ein Anamnesegespräch mit dem
   Patienten. Die Rolle des Patienten wird von einem Schauspieler gespielt, der Ihnen
   vorgegebene Informationen über seinen Gesundheitszustand. Ein vorgedruckter Anamnesebogen
   wird Ihnen zur Verfügung gestellt, um sich Notizen zu machen, aber er wird nicht als Teil der Prüfung bewertet. Sie haben
@@ -68,7 +69,7 @@ export default function ServiceInforamtion() {
           },
           2: {
             title: "",
-            description: ` Epikrise Sie müssen auf der Grundlage der vorgegebenen Dokumente eine Entlassungsübersicht
+            description: ` Epikrise: Sie müssen auf der Grundlage der vorgegebenen Dokumente eine Entlassungsübersicht
   (Epikrise) am Computer erstellen. Sie sollten die aktuellen Beschwerden, die durchgeführten
   Untersuchungen und die daraus resultierenden Erkenntnisse. Achten Sie dabei besonders auf Grammatik,
   Rechtschreibung und Ausdruck. Es müssen vollständige Sätze geschrieben werden, und verschiedene Methoden der Textverknüpfung
@@ -80,7 +81,7 @@ export default function ServiceInforamtion() {
           },
           3: {
             title: "",
-            description: ` Gespräch zwischen Arzt und Ärztin Im vierten Teil der Prüfung stellen Sie Ihren
+            description: ` Arzt-Arzt-Gespräch: Sie stellen Ihren
   Patienten den behandelnden Ärzten vor. In diesem Gespräch können Sie die medizinische
   Terminologie verwenden. Fassen Sie bitte kurz den aktuellen Befund, den ärztlichen Bericht aus der
   der Akte, die Meinung des Kollegen`,
@@ -89,7 +90,7 @@ export default function ServiceInforamtion() {
       : {
           1: {
             title: "",
-            description: `თქვენ გამოიკითხავთ ანამნეზს პაციენტთან. პაციენტის როლს ასრულებს
+            description: `ექიმი-პაციენტის საუბარი: თქვენ გამოიკითხავთ ანამნეზს პაციენტთან. პაციენტის როლს ასრულებს
 მსახიობი, რომელიც მოგაწვდით წინასწარ განსაზღვრულ ინფორმაციას მისი
 ჯანმრთელობის მდგომარეობის შესახებ. ანამნეზის აღების მიზნით გეძლევათ
 წინასწარ დაბეჭდილი ანამნეზის ფურცელი, რომელიც შეგიძლიათ გამოიყენოთ
@@ -106,7 +107,7 @@ export default function ServiceInforamtion() {
           },
           2: {
             title: "",
-            description: ` მოცემული დოკუმენტების საფუძველზე, უნდა დაწეროთ ეპიკრიზი
+            description: `ეპიკრიზი: მოცემული დოკუმენტების საფუძველზე, უნდა დაწეროთ ეპიკრიზი
 კომპიუტერზე. უნდა აღწეროთ მიმდინარე ჩივილები, ჩატარებული კვლევები და
 მათგან მიღებული შედეგები.
 განსაკუთრებული ყურადღება უნდა მიექცეს გრამატიკას, ორთოგრაფიას და
@@ -118,188 +119,17 @@ export default function ServiceInforamtion() {
           },
           3: {
             title: "",
-            description: ` გამოცდის მესამე ნაწილში თქვენ უნდა წარადგინოთ თქვენი პაციენტი დამსწრე
+            description: `ექიმი-ექიმის საუბარი: გამოცდის მესამე ნაწილში თქვენ უნდა წარადგინოთ თქვენი პაციენტი დამსწრე
 ექსპერტების წინაშე. ამ საუბარში შეგიძლიათ გამოიყენოთ სამედიცინო
 ტერმინები. გთხოვთ მოკლედ გადმოიტანოთ მიმდინარე კვლევები და ექიმის
-ჩანაწერი, კოლეგის (ფილმში მოყვანილი) ინფორმაცია და ლაბორატორიული
-ზარის მონაცემები.
+ჩანაწერი.
 პაციენტის წარდგენის შემდეგ ექსპერტები (გამცდელები) დაგისვამენ შეკითხვებს.`,
           },
         };
 
   return (
     <div className="pb-[100px] bg-gradient-to-b from-[#e6f7ff] to-[#f9f9f9]">
-      <header className="bg-[#002F6C] p-4 shadow-lg flex justify-between items-center relative">
-        <div>
-          <img
-            src="images/lg-5.png"
-            alt="Site Logo"
-            className={`w-[100px] lg:w-[40%] xl:w-[25%] ${
-              i18n.language === "ka" ||
-              i18n.language === "gr"
-                ? "min-w-[90px]"
-                : ""
-            } hover:brightness-75 transition duration-300 ease-in-out`}
-            onClick={() => navigate("/form")}
-          />
-        </div>
-        <button
-          onClick={toggleMenu}
-          className="text-white hover:text-gray-300 focus:outline-none lg:hidden"
-        >
-          <svg
-            className="w-10 h-10 mr-[20px]"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            ></path>
-          </svg>
-        </button>
-
-        {/* Navigation Bar for Large Screens */}
-        <nav
-          className={`hidden lg:flex ${
-            i18n.language === "ka"
-              ? "lg:space-x-2 xl:space-x-6 lg:text-[15px] xl:text-[15px] xl:mr-[30px] " // Adjusted for Georgian
-              : i18n.language === "gr"
-              ? "lg:space-x-4 lg:text-[15px] xl:text-[20px] " // Adjusted for German
-              : "lg:space-x-8 lg:text-[16.5px] xl:text-[22px] xl:mr-[70px]" // Default for English
-          } lg:font-bold`}
-        >
-          <Link
-            to="/service-details"
-            className={`text-white py-2 px-4  rounded-[20px] transition duration-300 bg-[#002F6C] transform hover:-translate-y-1 ${
-              i18n.language === "ka"
-                ? "text-cm "
-                : "xl:text-[19px] lg:text-[17px]"
-            }`}
-          >
-            {t("nav_1")}
-          </Link>
-          <Link
-            to="/service-documents"
-            className={`text-white py-2 px-4 rounded-[20px] transition duration-300 bg-[#002F6C] transform hover:-translate-y-1 ${
-              i18n.language === "ka"
-                ? "text-sm"
-                : "xl:text-[19px] lg:text-[17px]"
-            }`}
-          >
-            {t("nav_2")}
-          </Link>
-          <Link
-            to="/service-documentation"
-            className={`text-white py-2 px-4 rounded-[20px] transition duration-300 bg-[#002F6C] transform hover:-translate-y-1 ${
-              i18n.language === "ka"
-                ? "text-sm"
-                : "xl:text-[19px] lg:text-[17px]"
-            }`}
-          >
-            {t("nav_3")}
-          </Link>
-          <Link
-            to="/service-exam"
-            className={`text-white py-2 px-4 rounded-[20px] transition duration-300 bg-[#002F6C] transform hover:-translate-y-1 ${
-              i18n.language === "ka"
-                ? "text-sm"
-                : "xl:text-[19px] lg:text-[17px]"
-            }`}
-          >
-            {t("nav_4")}
-          </Link>
-          <Link
-            to="/service-information"
-            className={`text-white py-2 px-4 rounded-[20px] transition duration-300 bg-[#002F6C] transform hover:-translate-y-1 ${
-              i18n.language === "ka"
-                ? "text-sm"
-                : "xl:text-[19px] lg:text-[17px]"
-            }`}
-          >
-            {t("nav_5")}
-          </Link>
-          <Link
-            to="/service-prepare"
-            className={`text-white py-2 px-4 rounded-[20px] transition duration-300 bg-[#002F6C] transform hover:-translate-y-1 ${
-              i18n.language === "ka"
-                ? "text-sm"
-                : "xl:text-[19px] lg:text-[17px]"
-            }`}
-          >
-            {t("nav_6")}
-          </Link>
-        </nav>
-      </header>
-
-      {/* Full-Screen Overlay for Small Screens */}
-      {isMenuOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex flex-col justify-center items-center z-50 lg:hidden">
-          <button
-            onClick={toggleMenu}
-            className="absolute inset-x-0 mx-auto top-[50px] transform -translate-y-1/2 text-[#521bd4] text-[100px] focus:outline-none"
-          >
-            &times;
-          </button>
-          <nav className="flex flex-col items-center space-y-1 md:mt-[100px] mt-[70px] ">
-            <Link
-              to="/service-details"
-              className="group text-[#f6f1f1] text-[24px] font-bold font-poppins py-2 px-4 rounded hover:bg-[#1f5082] transition duration-300"
-              onClick={toggleMenu}
-            >
-              {t("nav_1")}
-              <hr className="border-t-0 h-[1px] bg-gradient-to-r from-[#2b427a] via-[#c58d8d] to-[#2b427a] rounded-full shadow-md mt-[4px] mb-1 opacity-70 group-hover:opacity-100 group-hover:shadow-lg transition duration-300" />
-            </Link>
-
-            <Link
-              to="/service-documents"
-              className="text-[#fff]  py-2 px-4 text-[24px] font-bold font-poppins  rounded hover:bg-[#004080] transition duration-300"
-              onClick={toggleMenu}
-            >
-              {t("nav_2")}
-              <hr className="border-t-0 h-[1px] bg-gradient-to-r from-[#2b427a] via-[#c58d8d] to-[#2b427a] rounded-full shadow-md mt-[4px] mb-1" />
-            </Link>
-
-            <Link
-              to="/service-documentation"
-              className="text-[#fff]  text-[24px] font-bold font-poppins  py-2 px-4 rounded hover:bg-[#004080] transition duration-300"
-              onClick={toggleMenu}
-            >
-              {t("nav_3")}
-              <hr className="border-t-0 h-[1px] bg-gradient-to-r from-[#2b427a] via-[#c58d8d] to-[#2b427a] rounded-full shadow-md mt-[4px] mb-1" />
-            </Link>
-
-            <Link
-              to="/service-exam"
-              className="text-[#fff]  py-2 px-4 text-[25px] font-bold font-poppins  rounded hover:bg-[#004080] transition duration-300"
-              onClick={toggleMenu}
-            >
-              {t("nav_4")}
-              <hr className="border-t-0 h-[1px] bg-gradient-to-r from-[#2b427a] via-[#c58d8d] to-[#2b427a] rounded-full shadow-md mt-[4px] mb-1" />
-            </Link>
-            <Link
-              to="/service-information"
-              className="text-white  py-2 px-4 text-[25px] font-bold font-poppins  rounded hover:bg-[#004080] transition duration-300"
-              onClick={toggleMenu}
-            >
-              {t("nav_5")}
-              <hr className="border-t-0 h-[1px] bg-gradient-to-r from-[#2b427a] via-[#c58d8d] to-[#2b427a] rounded-full shadow-md mt-[4px] mb-1" />
-            </Link>
-            <Link
-              to="/service-prepare"
-              className="text-white  py-2 px-4 text-[25px] font-bold font-poppins  rounded hover:bg-[#004080] transition duration-300"
-              onClick={toggleMenu}
-            >
-              {t("nav_6")}
-              <hr className="border-t-0 h-[1px] bg-gradient-to-r from-[#2b427a] via-[#c58d8d] to-[#2b427a] rounded-full shadow-md mt-[4px] mb-1" />
-            </Link>
-          </nav>
-        </div>
-      )}
+      <Header />
 
       {/* Section Title */}
       <h1 className="text-center mt-[50px] text-[#002F6C] pb-[30px] font-poppins font-bold text-[28px] leading-relaxed md:text-[32px] lg:text-[36px]">

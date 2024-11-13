@@ -4,6 +4,7 @@ import {
   Link,
 } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import Header from "./Header";
 
 export default function ServicePrepare() {
   const { i18n } = useTranslation();
@@ -23,8 +24,7 @@ export default function ServicePrepare() {
       ? {
           1: {
             title: "",
-            description: `Documents (requirements, patient file, phone call, vocabulary list) In the second part
-  of the exam, you will first receive a medical request form that must be fully completed.
+            description: `Documents (requirements, patient file, phone call, vocabulary list): you will first receive a medical request form that must be fully completed.
   Next, you will be given further information about your patient in the form of a file that
   may include a medical report, findings from CT, X-ray, ultrasound, endoscopy, and
   laboratory results. A colleague will also provide information about the patient (film). `,
@@ -57,8 +57,7 @@ export default function ServicePrepare() {
       ? {
           1: {
             title: "",
-            description: `Dokumente (Anforderungen, Patientenakte, Telefonat, Vokabelliste) Im zweiten Teil
-  der Prüfung erhalten Sie zunächst ein medizinisches Anforderungsformular, das vollständig ausgefüllt werden muss.
+            description: `Dokumente (Anforderungen, Patientenakte, Telefonat, Vokabelliste): Sie erhalten zunächst ein medizinisches Anforderungsformular, das vollständig ausgefüllt werden muss.
   Anschließend erhalten Sie weitere Informationen über Ihren Patienten in Form einer Akte, die
   die einen medizinischen Bericht, CT-, Röntgen-, Ultraschall- und Endoskopiebefunde sowie
   Laborergebnisse. Auch ein Kollege wird Ihnen Informationen über den Patienten geben (Film). `,
@@ -125,177 +124,7 @@ export default function ServicePrepare() {
 
   return (
     <div className="pb-[100px] bg-gradient-to-b from-[#e6f7ff] to-[#f9f9f9]">
-      <header className="bg-[#002F6C] p-4 shadow-lg flex justify-between items-center relative">
-        <div>
-          <img
-            src="images/lg-5.png"
-            alt="Site Logo"
-            className={`w-[100px] lg:w-[40%] xl:w-[25%] ${
-              i18n.language === "ka" ||
-              i18n.language === "gr"
-                ? "min-w-[90px]"
-                : ""
-            } hover:brightness-75 transition duration-300 ease-in-out`}
-            onClick={() => navigate("/form")}
-          />
-        </div>
-        <button
-          onClick={toggleMenu}
-          className="text-white hover:text-gray-300 focus:outline-none lg:hidden"
-        >
-          <svg
-            className="w-10 h-10 mr-[20px]"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            ></path>
-          </svg>
-        </button>
-
-        {/* Navigation Bar for Large Screens */}
-        <nav
-          className={`hidden lg:flex ${
-            i18n.language === "ka"
-              ? "lg:space-x-2 xl:space-x-6 lg:text-[15px] xl:text-[15px] xl:mr-[30px] " // Adjusted for Georgian
-              : i18n.language === "gr"
-              ? "lg:space-x-4 lg:text-[15px] xl:text-[20px] " // Adjusted for German
-              : "lg:space-x-8 lg:text-[16.5px] xl:text-[22px] xl:mr-[70px]" // Default for English
-          } lg:font-bold`}
-        >
-          <Link
-            to="/service-details"
-            className={`text-white py-2 px-4  rounded-[20px] transition duration-300 bg-[#002F6C] transform hover:-translate-y-1 ${
-              i18n.language === "ka"
-                ? "text-cm "
-                : "xl:text-[19px] lg:text-[17px]"
-            }`}
-          >
-            {t("nav_1")}
-          </Link>
-          <Link
-            to="/service-documents"
-            className={`text-white py-2 px-4 rounded-[20px] transition duration-300 bg-[#002F6C] transform hover:-translate-y-1 ${
-              i18n.language === "ka"
-                ? "text-sm"
-                : "xl:text-[19px] lg:text-[17px]"
-            }`}
-          >
-            {t("nav_2")}
-          </Link>
-          <Link
-            to="/service-documentation"
-            className={`text-white py-2 px-4 rounded-[20px] transition duration-300 bg-[#002F6C] transform hover:-translate-y-1 ${
-              i18n.language === "ka"
-                ? "text-sm"
-                : "xl:text-[19px] lg:text-[17px]"
-            }`}
-          >
-            {t("nav_3")}
-          </Link>
-          <Link
-            to="/service-exam"
-            className={`text-white py-2 px-4 rounded-[20px] transition duration-300 bg-[#002F6C] transform hover:-translate-y-1 ${
-              i18n.language === "ka"
-                ? "text-sm"
-                : "xl:text-[19px] lg:text-[17px]"
-            }`}
-          >
-            {t("nav_4")}
-          </Link>
-          <Link
-            to="/service-information"
-            className={`text-white py-2 px-4 rounded-[20px] transition duration-300 bg-[#002F6C] transform hover:-translate-y-1 ${
-              i18n.language === "ka"
-                ? "text-sm"
-                : "xl:text-[19px] lg:text-[17px]"
-            }`}
-          >
-            {t("nav_5")}
-          </Link>
-          <Link
-            to="/service-prepare"
-            className={`text-white py-2 px-4 rounded-[20px] transition duration-300 bg-[#002F6C] transform hover:-translate-y-1 ${
-              i18n.language === "ka"
-                ? "text-sm"
-                : "xl:text-[19px] lg:text-[17px]"
-            }`}
-          >
-            {t("nav_6")}
-          </Link>
-        </nav>
-      </header>
-
-      {/* Full-Screen Overlay for Small Screens */}
-      {isMenuOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex flex-col justify-center items-center z-50 lg:hidden">
-          <button
-            onClick={toggleMenu}
-            className="absolute inset-x-0 mx-auto top-[50px] transform -translate-y-1/2 text-[#521bd4] text-[100px] focus:outline-none"
-          >
-            &times;
-          </button>
-          <nav className="flex flex-col items-center space-y-1 md:mt-[100px] mt-[70px] ">
-            <Link
-              to="/service-details"
-              className="group text-[#f6f1f1] text-[24px] font-bold font-poppins py-2 px-4 rounded hover:bg-[#1f5082] transition duration-300"
-              onClick={toggleMenu}
-            >
-              {t("nav_1")}
-              <hr className="border-t-0 h-[1px] bg-gradient-to-r from-[#2b427a] via-[#c58d8d] to-[#2b427a] rounded-full shadow-md mt-[4px] mb-1 opacity-70 group-hover:opacity-100 group-hover:shadow-lg transition duration-300" />
-            </Link>
-
-            <Link
-              to="/service-documents"
-              className="text-[#fff]  py-2 px-4 text-[24px] font-bold font-poppins  rounded hover:bg-[#004080] transition duration-300"
-              onClick={toggleMenu}
-            >
-              {t("nav_2")}
-              <hr className="border-t-0 h-[1px] bg-gradient-to-r from-[#2b427a] via-[#c58d8d] to-[#2b427a] rounded-full shadow-md mt-[4px] mb-1" />
-            </Link>
-
-            <Link
-              to="/service-documentation"
-              className="text-[#fff]  text-[24px] font-bold font-poppins  py-2 px-4 rounded hover:bg-[#004080] transition duration-300"
-              onClick={toggleMenu}
-            >
-              {t("nav_3")}
-              <hr className="border-t-0 h-[1px] bg-gradient-to-r from-[#2b427a] via-[#c58d8d] to-[#2b427a] rounded-full shadow-md mt-[4px] mb-1" />
-            </Link>
-
-            <Link
-              to="/service-exam"
-              className="text-[#fff]  py-2 px-4 text-[25px] font-bold font-poppins  rounded hover:bg-[#004080] transition duration-300"
-              onClick={toggleMenu}
-            >
-              {t("nav_4")}
-              <hr className="border-t-0 h-[1px] bg-gradient-to-r from-[#2b427a] via-[#c58d8d] to-[#2b427a] rounded-full shadow-md mt-[4px] mb-1" />
-            </Link>
-            <Link
-              to="/service-information"
-              className="text-white  py-2 px-4 text-[25px] font-bold font-poppins  rounded hover:bg-[#004080] transition duration-300"
-              onClick={toggleMenu}
-            >
-              {t("nav_5")}
-              <hr className="border-t-0 h-[1px] bg-gradient-to-r from-[#2b427a] via-[#c58d8d] to-[#2b427a] rounded-full shadow-md mt-[4px] mb-1" />
-            </Link>
-            <Link
-              to="/service-prepare"
-              className="text-white  py-2 px-4 text-[25px] font-bold font-poppins  rounded hover:bg-[#004080] transition duration-300"
-              onClick={toggleMenu}
-            >
-              {t("nav_6")}
-              <hr className="border-t-0 h-[1px] bg-gradient-to-r from-[#2b427a] via-[#c58d8d] to-[#2b427a] rounded-full shadow-md mt-[4px] mb-1" />
-            </Link>
-          </nav>
-        </div>
-      )}
+      <Header />
 
       {/* Section Title */}
       <h1 className="text-center mt-[50px] text-[#002F6C] pb-[30px] font-poppins font-bold text-[28px] leading-relaxed md:text-[32px] lg:text-[36px]">
