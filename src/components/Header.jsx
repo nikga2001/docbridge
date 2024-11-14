@@ -168,8 +168,8 @@ export default function Header() {
 
       {/* Contact Modal */}
       {isContactModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 px-4">
-          <div className="bg-white p-4 md:p-8 rounded-lg shadow-lg text-center text-[#002F6C] w-full max-w-[400px]">
+        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 px-4 font-poppins">
+          <div className="bg-white p-4 md:p-8 rounded-lg shadow-lg text-center text-[#002F6C] w-full max-w-[300px]  md:max-w-[350px]">
             <h2 className="text-lg font-bold mb-4">
               {t("contact")}
             </h2>

@@ -127,7 +127,7 @@ export default function ServicePrepare() {
       <Header />
 
       {/* Section Title */}
-      <h1 className="text-center mt-[50px] text-[#002F6C] pb-[30px] font-poppins font-bold text-[28px] leading-relaxed md:text-[32px] lg:text-[36px]">
+      <h1 className="text-center mt-[50px] text-[#002F6C] pb-[30px] font-poppins font-bold text-[28px] leading-relaxed md:text-[32px] lg:text-[36px] md:mx-[15px] lg:mx-[10px] xl:mx-[15px]">
         {t("prepare_h1")}
       </h1>
 
