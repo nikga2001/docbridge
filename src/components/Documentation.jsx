@@ -16,7 +16,7 @@ export default function Documentation() {
       <img
         src="/images/document-2.jpg"
         alt="Document preparation"
-        className="max-w-full mx-auto md:max-w-[80%]  rounded-[30px] shadow-custom-heavy"
+        className="max-w-full mx-auto md:max-w-[80%]  rounded-[30px] "
       />
 
       <p className="text-[#002F6C] mt-[40px] ml-[10px] font-poppins font-bold text-[20px] md:text-left md:text-[23px] md:mt-[33px] md:ml-[33px] md:font-extrabold lg:ml-[19px] lg:text-[23px]  lg:mt-[22px] lg:ml-[40px]">

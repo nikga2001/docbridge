@@ -15,7 +15,7 @@ export default function Information() {
       <img
         src="/images/document.jpg"
         alt="Document preparation"
-        className="max-w-full mx-auto md:max-w-[80%] lg:max-w-[73%] rounded-[30px] shadow-custom-heavy"
+        className="max-w-full mx-auto md:max-w-[80%] lg:max-w-[73%] rounded-[30px] "
       />
 
       <p className="text-[#002F6C] mt-[40px] ml-[10px] font-poppins font-bold text-[20px] md:text-[22px] md:mt-[25px] md:mx-[40px] lg:ml-[55px] lg:text-[23px]  lg:mt-[12px]">

@@ -16,7 +16,7 @@ export default function Team() {
       <img
         src="/images/tm.jpg"
         alt={t("team_alt")}
-        className="max-w-full mx-auto md:max-w-[80%] rounded-[30px] shadow-custom-heavy"
+        className="max-w-full mx-auto md:max-w-[80%] rounded-[30px] "
       />
 
       <p className="text-[#002F6C] mt-[40px] ml-[10px] font-poppins font-bold text-[23px] md:text-[28px] md:mt-[40px] md:mx-[40px] lg:ml-[40px] lg:text-[25px] lg:mt-[0] lg:mt-[20px]">

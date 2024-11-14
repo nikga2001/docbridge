@@ -16,7 +16,7 @@ export default function Prepare() {
       <img
         src="/images/exam-hooks.jpg"
         alt="Document preparation"
-        className="max-w-full mx-auto md:max-w-[80%] lg:max-w-[82%] rounded-[30px] shadow-custom-heavy"
+        className="max-w-full mx-auto md:max-w-[80%] lg:max-w-[82%] rounded-[30px] "
       />
 
       <p className="text-[#002F6C] mt-[40px] ml-[10px] font-poppins font-bold text-[20px]   md:text-[23px] md:mt-[40px] md:ml-[33px] md:font-extrabold lg:ml-[40px] lg:text-[23px]  lg:mt-[28px]">

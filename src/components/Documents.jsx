@@ -18,7 +18,7 @@ export default function Documents() {
       <img
         src="/images/guidance.jpg"
         alt="Operation assistance"
-        className="max-w-full mx-auto md:max-w-[80%]  rounded-[30px] shadow-custom-heavy "
+        className="max-w-full mx-auto md:max-w-[80%]  rounded-[30px]  "
       />
 
       <p className="text-[#002F6C] mt-[40px] ml-[10px] font-poppins font-bold text-[21px] md:text-[22px] md:mt-[40px] md:mx-[40px] lg:ml-[40px] lg:text-[24px]  lg:mt-[21px]">

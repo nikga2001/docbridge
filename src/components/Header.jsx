@@ -27,17 +27,14 @@ export default function Header() {
 
   return (
     <>
-      <header className="bg-[#002F6C] bg-[url(./images/lg-5.png)] bg-[length:86px_86px] lg:bg-[length:100px_100px] bg-[left_10px_center] bg-no-repeat lg:p-7 p-8 xl:p-7 shadow-lg flex justify-between font-poppins items-center relative">
+      <header className="bg-[#002F6C]  bg-no-repeat lg:p-3 p-3 xl:p-5 shadow-lg flex justify-between font-poppins items-center relative">
         {/* Invisible Button Overlay for Logo */}
-        <button
+        <img
           onClick={() => navigate("/")}
-          className="absolute left-0 top-0 w-[86px] lg:w-[100px] h-[86px] lg:h-[100px] cursor-pointer"
-          aria-label="Go to homepage"
-          style={{
-            background: "none",
-            border: "none",
-          }}
-        ></button>
+          src="/images/lg-5.png"
+          alt="WhatsApp logo"
+          className="w-[90px]"
+        />
 
         {/* Toggle Menu Button for Small Screens */}
         <button
@@ -64,10 +61,10 @@ export default function Header() {
         <nav
           className={`hidden lg:flex items-center w-full lg:font-bold ${
             i18n.language === "ka"
-              ? "lg:space-x-15 lg:ml-[121px] xl:space-x-10 xl:ml-[170px] lg:text-[13px] xl:text-[15px]"
+              ? "lg:space-x-15 lg:ml-[20px] xl:space-x-10 xl:ml-[100px] lg:text-[13px] xl:text-[15px]"
               : i18n.language === "gr"
-              ? "lg:space-x-15 lg:ml-[95px] xl:ml-[150px] xl:space-x-20"
-              : "lg:space-x-15 lg:ml-[130px] xl:ml-[200px] xl:space-x-20 xl:text-[22px]"
+              ? "lg:space-x-15 lg:ml-[20px] xl:ml-[90px] xl:space-x-20"
+              : "lg:space-x-15 lg:ml-[70px] xl:ml-[110px] xl:space-x-20 xl:text-[22px]"
           }`}
         >
           {/* Centered Navigation Links */}
@@ -210,7 +207,7 @@ export default function Header() {
         <div className="fixed inset-0 bg-black bg-opacity-75 flex flex-col justify-center items-center z-50 lg:hidden">
           <button
             onClick={toggleMenu}
-            className="absolute inset-x-0 mx-auto top-[35px] transform -translate-y-1/2 text-[#521bd4] text-[100px] focus:outline-none"
+            className="absolute inset-x-0 mx-auto top-[70px] transform -translate-y-1/2 text-[#521bd4] text-[100px] focus:outline-none"
           >
             &times;
           </button>

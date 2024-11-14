@@ -120,7 +120,7 @@ export default function ServiceDetails() {
         {/* Image */}
         <img
           src="/images/tm.jpg"
-          className="w-[90%] md:w-[70%] lg:w-[47%] md:mt-[50px] lg:ml-[30px] xl:ml-[30px] lg:w-[43%] rounded-[20px] mx-auto shadow-custom-heavy lg:mr-[55px] hover:shadow-xl transition-shadow duration-300 "
+          className="w-[90%] md:w-[70%] lg:w-[47%] md:mt-[50px] lg:ml-[30px] xl:ml-[30px] lg:w-[43%] rounded-[20px] mx-auto  lg:mr-[55px] hover:shadow-xl transition-shadow duration-300 "
           alt="Team Image"
         />
 

@@ -156,7 +156,7 @@ export default function Form({
           <img
             src="/images/photo-2.jpg"
             alt="Description of photo 6"
-            className="w-full h-auto rounded-lg shadow-custom-low hover:shadow-2xl transition-shadow duration-300 md:w-[48%] lg:w-[45%] xl:w-[43%]"
+            className="w-full h-auto rounded-lg  hover:shadow-2xl transition-shadow duration-300 md:w-[48%] lg:w-[45%] xl:w-[43%]"
           />
           <h2 className="text-[#002F6C] mt-[20px] font-poppins text-[30px] text-center font-bold  md:mx-[15px] md:text-[40px] xl:text-[45px] xl:mt-[60px]">
             {t("career_title")}

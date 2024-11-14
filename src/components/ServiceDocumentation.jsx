@@ -171,7 +171,7 @@ akzeptiert. Bitte verwenden Sie keine Plastikmappen, Ordner oder ähnliches für
       <div className="flex flex-col md:flex-col lg:flex-row lg:items-start items-center justify-center gap-x-6 md:mt-[40px] lg:mt-[40px] mx-[30px] lg:mx-[0px]">
         <img
           src="/images/document.jpg"
-          className="w-full md:w-[70%] lg:w-[45%] rounded-[20px] shadow-custom-heavy hover:shadow-xl transition-shadow duration-300 lg:mt-[20px]"
+          className="w-full md:w-[70%] lg:w-[45%] rounded-[20px]  hover:shadow-xl transition-shadow duration-300 lg:mt-[20px]"
           alt="Guidance"
         />
         <ul className="w-full md:w-[100%] lg:w-[48%] mt-[60px] md:mt-[50px] lg:mt-[0px] lg:ml-[40px]   flex flex-col">

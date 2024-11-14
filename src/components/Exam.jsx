@@ -16,7 +16,7 @@ export default function Exam() {
       <img
         src="/images/prepare.jpg"
         alt="Operation assistance"
-        className="max-w-full mx-auto md:max-w-[80%] lg:max-w-[75%] rounded-[30px] shadow-custom-heavy"
+        className="max-w-full mx-auto md:max-w-[80%] lg:max-w-[75%] rounded-[30px] "
       />
 
       <p className="text-[#002F6C] mt-[40px] ml-[10px] font-poppins font-bold text-[20px]  md:ml-[30px] md:text-[23px] md:mt-[30px] md:font-bold lg:ml-[45px] lg:text-[23px] lg:mt-[0] lg:mt-[20px] ">
